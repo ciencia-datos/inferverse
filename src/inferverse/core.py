@@ -9,7 +9,7 @@ from scipy import stats
 
 from .visualize import visualize_distribution
 
-StatType = Literal["mean", "diff_in_means", "proportion", "diff_in_props"]
+StatType = Literal["mean", "proportion", "prop", "diff_in_means", "diff_in_props"]
 HypothesisType = Literal["independence", "point"]
 
 
@@ -59,7 +59,7 @@ class InferPipeline:
         if "replicate" not in generated.columns:
             raise ValueError("generated data must include 'replicate'.")
 
-        if stat in ("mean", "proportion"):
+        if stat in ("mean", "proportion", "prop"):
             return generated.group_by("replicate").agg(pl.col(self.response).mean().alias("stat"))
 
         if stat in ("diff_in_means", "diff_in_props"):

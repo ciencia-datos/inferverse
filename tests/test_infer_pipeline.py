@@ -46,6 +46,17 @@ def test_p_value_two_sided() -> None:
     assert p == 0.8
 
 
+
+def test_calculate_prop_alias_for_single_proportion() -> None:
+    df = pl.DataFrame({"outcome": [1, 0, 1, 1, 0, 1]})
+    pipe = InferPipeline(df).specify("outcome").hypothesize("point", null_value=0.5)
+
+    sims = pipe.generate(reps=12, seed=4)
+    stats = pipe.calculate(sims, stat="prop")
+
+    assert set(stats.columns) == {"replicate", "stat"}
+    assert stats.height == 12
+
 def test_visualize_returns_altair_chart() -> None:
     df = pl.DataFrame({"group": ["a", "a", "b", "b"], "y": [1, 0, 1, 1]})
     pipe = InferPipeline(df).specify("y", "group").hypothesize("independence")
