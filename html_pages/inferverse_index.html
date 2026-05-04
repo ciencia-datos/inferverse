@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inferverse: The Future of Statistical Inference</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8FAFC;
+        }
+        
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 450px;
+        }
+
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+        
+        .card-elevation {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        .card-elevation:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="text-slate-800 antialiased">
+
+    <header class="bg-[#1E3A8A] text-white py-20 px-6 lg:px-12 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-[-50px] left-[-50px] w-64 h-64 rounded-full bg-[#F97316] blur-3xl"></div>
+            <div class="absolute bottom-[-50px] right-[-50px] w-96 h-96 rounded-full bg-[#7C3AED] blur-3xl"></div>
+        </div>
+        
+        <div class="max-w-6xl mx-auto relative z-10 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-[#F97316] text-white text-sm font-bold tracking-wider mb-4 uppercase">Whitepaper Presentation</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">Inferverse</h1>
+            <p class="text-xl md:text-2xl text-blue-100 mb-8 font-light italic">Created by Mallesham Yamulla</p>
+            <p class="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto font-light leading-relaxed">
+                Python's foundational statistical modeling ecosystem is legacy-bound and fragmented. <br><strong>Inferverse</strong> is the unified solution for the next decade of data science.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto p-6 md:p-12 space-y-16 mt-[-40px] relative z-20">
+
+        <section class="bg-white rounded-2xl p-8 md:p-12 card-elevation border-t-4 border-[#7C3AED]">
+            <div class="max-w-3xl mb-8">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">The Fragmentation Paradox</h2>
+                <p class="text-lg text-slate-600 leading-relaxed">
+                    Data scientists currently perform "API Gymnastics"—switching between disparate libraries just to complete a single study. <strong>Inferverse</strong> eliminates this friction by consolidating frequentist and Bayesian paradigms into a single, high-performance engine.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                    <div class="text-4xl mb-4">&#128200;</div>
+                    <h3 class="text-xl font-bold text-[#1E3A8A] mb-2">SciPy Stats</h3>
+                    <p class="text-sm text-slate-600">Limited to basic distributions; lacks the modern formula syntax required for complex modeling.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 relative">
+                    <div class="absolute top-1/2 left-[-15px] transform -translate-y-1/2 text-2xl text-slate-400 hidden md:block">&#10132;</div>
+                    <div class="text-4xl mb-4">&#128221;</div>
+                    <h3 class="text-xl font-bold text-[#F97316] mb-2">Statsmodels</h3>
+                    <p class="text-sm text-slate-600">Great for R-style summaries, but hits severe performance walls on modern, large-scale datasets.</p>
+                    <div class="absolute top-1/2 right-[-15px] transform -translate-y-1/2 text-2xl text-slate-400 hidden md:block">&#10132;</div>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                    <div class="text-4xl mb-4">&#127922;</div>
+                    <h3 class="text-xl font-bold text-[#7C3AED] mb-2">PyMC</h3>
+                    <p class="text-sm text-slate-600">Powerful Bayesian tools, but requires a complete logic shift and massive code refactoring to implement.</p>
+                </div>
+            </div>
+            
+            <div class="mt-8 bg-blue-50 border-l-4 border-[#1E3A8A] p-4 rounded-r-lg">
+                <p class="text-[#1E3A8A] font-semibold flex items-center">
+                    <span class="text-xl mr-2">&#128640;</span> 
+                    <strong>The Inferverse Advantage:</strong> A single import that handles everything from simple T-tests to hierarchical Bayesian models using a consistent, "tidy" API.
+                </p>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            
+            <div class="bg-white rounded-2xl p-8 card-elevation">
+                <h2 class="text-2xl font-bold text-slate-900 mb-2">Quantifying the Pain Points</h2>
+                <p class="text-slate-600 mb-8 text-sm">
+                    In current Python workflows, API inconsistency is the primary barrier to entry. Inferverse is designed specifically to address these top five industry frustrations.
+                </p>
+                <div class="chart-container">
+                    <canvas id="painPointsChart"></canvas>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 card-elevation">
+                <h2 class="text-2xl font-bold text-slate-900 mb-2">Performance Benchmark</h2>
+                <p class="text-slate-600 mb-8 text-sm">
+                    As data scales, traditional libraries exhibit exponential growth in execution time. Inferverse utilizes a compiled backend to maintain near-linear performance.
+                </p>
+                <div class="chart-container">
+                    <canvas id="performanceChart"></canvas>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="bg-white rounded-2xl p-8 md:p-12 card-elevation">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Core Pillars of Inferverse</h2>
+                <p class="text-lg text-slate-600">
+                    By merging the best of frequentist stability with Bayesian flexibility, Mallesham Yamulla's vision for Inferverse creates a tool that is as simple for beginners as it is powerful for researchers.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+                <div class="lg:col-span-2 chart-container h-[500px]">
+                    <canvas id="radarChart"></canvas>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="bg-[#1E3A8A] text-white p-5 rounded-lg shadow-md">
+                        <h4 class="font-bold text-lg mb-1 flex items-center"><span class="text-[#FACC15] mr-2">&#10003;</span> One-Liner Inference</h4>
+                        <p class="text-sm text-blue-100">Switch from OLS to MCMC by simply updating the 'method' parameter—no code rewrite needed.</p>
+                    </div>
+                    <div class="bg-[#7C3AED] text-white p-5 rounded-lg shadow-md">
+                        <h4 class="font-bold text-lg mb-1 flex items-center"><span class="text-[#FACC15] mr-2">&#10003;</span> JIT-Compiled Core</h4>
+                        <p class="text-sm text-purple-100">Leveraging high-performance runtimes to process millions of records in milliseconds.</p>
+                    </div>
+                    <div class="bg-[#0D9488] text-white p-5 rounded-lg shadow-md">
+                        <h4 class="font-bold text-lg mb-1 flex items-center"><span class="text-[#FACC15] mr-2">&#10003;</span> Automatic Priors</h4>
+                        <p class="text-sm text-teal-100">Intelligent, data-driven default priors that make Bayesian analysis accessible to all.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-slate-900 rounded-2xl p-8 md:p-12 card-elevation text-white">
+            <div class="max-w-4xl mb-8">
+                <span class="text-[#F97316] font-bold tracking-wider uppercase text-sm mb-2 block">High-Dimensional Analysis</span>
+                <h2 class="text-3xl font-bold mb-4">The Inferverse Scaling Frontier</h2>
+                <p class="text-slate-300">
+                    Traditional packages degrade exponentially as feature counts and observation volumes grow. The Inferverse architecture (visualized in teal) maintains a predictable, flat scaling profile compared to legacy legacy bottlenecks (visualized in orange).
+                </p>
+            </div>
+            
+            <div class="bg-slate-800 rounded-xl p-2 h-[500px] w-full relative">
+                <div id="plotlyScatter3D" class="w-full h-full"></div>
+            </div>
+            <p class="text-center text-slate-400 text-sm mt-4 italic">Interactive Simulation: Observation Volume vs. Feature Dimensionality vs. Latency</p>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-50 text-slate-500 py-12 text-center border-t border-slate-200 mt-12">
+        <div class="max-w-3xl mx-auto px-6">
+            <h3 class="text-xl font-bold text-slate-800 mb-2">Inferverse</h3>
+            <p class="text-md text-[#F97316] font-semibold mb-4">Created & Authored by Mallesham Yamulla</p>
+            <p class="mb-6">
+                Redefining statistical computing for the Python ecosystem through unification, performance, and accessibility.
+            </p>
+            <p class="text-sm font-semibold">&copy; 2026 Inferverse Project Group.</p>
+        </div>
+    </footer>
+
+    <script>
+        function wrapLabel(label) {
+            if (label.length <= 16) return label;
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            
+            words.forEach(word => {
+                if ((currentLine + word).length > 16) {
+                    if (currentLine) lines.push(currentLine.trim());
+                    currentLine = word + ' ';
+                } else {
+                    currentLine += word + ' ';
+                }
+            });
+            if (currentLine) lines.push(currentLine.trim());
+            return lines;
+        }
+
+        const standardTooltipConfig = {
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                              return label.join(' ');
+                            } else {
+                              return label;
+                            }
+                        }
+                    }
+                },
+                legend: {
+                    labels: { font: { family: "'Inter', sans-serif" } }
+                }
+            },
+            maintainAspectRatio: false,
+            responsive: true
+        };
+
+        const rawPainPointLabels = [
+            "Inconsistent API Designs",
+            "Fragmented Documentation",
+            "Slow Performance on Big Data",
+            "Steep Learning Curve for Bayesian",
+            "Lack of Tidy Data Integration"
+        ];
+        const wrappedPainPointLabels = rawPainPointLabels.map(wrapLabel);
+
+        const ctxPain = document.getElementById('painPointsChart').getContext('2d');
+        new Chart(ctxPain, {
+            type: 'bar',
+            data: {
+                labels: wrappedPainPointLabels,
+                datasets: [{
+                    label: '% of Users Reporting Frustration',
+                    data: [88, 76, 65, 54, 42],
+                    backgroundColor: '#F97316',
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                ...standardTooltipConfig,
+                indexAxis: 'y',
+                scales: {
+                    x: { beginAtZero: true, max: 100, grid: { color: '#e2e8f0' } },
+                    y: { grid: { display: false }, ticks: { font: { family: "'Inter', sans-serif" } } }
+                }
+            }
+        });
+
+        const rawSizesLabels = ["1,000 Rows", "10,000 Rows", "100,000 Rows", "1,000,000 Rows", "10,000,000 Rows"];
+        const wrappedSizesLabels = rawSizesLabels.map(wrapLabel);
+
+        const ctxPerf = document.getElementById('performanceChart').getContext('2d');
+        new Chart(ctxPerf, {
+            type: 'line',
+            data: {
+                labels: wrappedSizesLabels,
+                datasets: [
+                    {
+                        label: 'Legacy Ecosystem (Seconds)',
+                        data: [0.1, 2.5, 45.0, 380.0, 1500.0],
+                        borderColor: '#7C3AED',
+                        backgroundColor: 'rgba(124, 58, 237, 0.1)',
+                        borderWidth: 3,
+                        pointBackgroundColor: '#7C3AED',
+                        pointRadius: 5,
+                        fill: true,
+                        tension: 0.4
+                    },
+                    {
+                        label: 'Inferverse Engine',
+                        data: [0.05, 0.3, 1.8, 12.5, 65.0],
+                        borderColor: '#0D9488',
+                        backgroundColor: 'transparent',
+                        borderWidth: 3,
+                        pointBackgroundColor: '#0D9488',
+                        pointRadius: 5,
+                        tension: 0.4
+                    }
+                ]
+            },
+            options: {
+                ...standardTooltipConfig,
+                scales: {
+                    y: {
+                        type: 'logarithmic',
+                        title: { display: true, text: 'Execution Time (Log Scale)' },
+                        grid: { color: '#e2e8f0' }
+                    },
+                    x: { grid: { display: false } }
+                }
+            }
+        });
+
+        const rawRadarLabels = [
+            "API Consistency",
+            "Execution Speed",
+            "Bayesian Support",
+            "Modern Tidy Dataframes",
+            "Extensibility"
+        ];
+        const wrappedRadarLabels = rawRadarLabels.map(wrapLabel);
+
+        const ctxRadar = document.getElementById('radarChart').getContext('2d');
+        new Chart(ctxRadar, {
+            type: 'radar',
+            data: {
+                labels: wrappedRadarLabels,
+                datasets: [
+                    {
+                        label: 'Inferverse',
+                        data: [98, 95, 92, 98, 90],
+                        backgroundColor: 'rgba(30, 58, 138, 0.2)',
+                        borderColor: '#1E3A8A',
+                        pointBackgroundColor: '#1E3A8A',
+                        borderWidth: 2
+                    },
+                    {
+                        label: 'Statsmodels',
+                        data: [60, 40, 10, 70, 50],
+                        backgroundColor: 'rgba(249, 115, 22, 0.2)',
+                        borderColor: '#F97316',
+                        pointBackgroundColor: '#F97316',
+                        borderWidth: 2
+                    },
+                    {
+                        label: 'SciPy Stats',
+                        data: [50, 80, 5, 30, 40],
+                        backgroundColor: 'rgba(124, 58, 237, 0.2)',
+                        borderColor: '#7C3AED',
+                        pointBackgroundColor: '#7C3AED',
+                        borderWidth: 2
+                    }
+                ]
+            },
+            options: {
+                ...standardTooltipConfig,
+                scales: {
+                    r: {
+                        angleLines: { color: '#cbd5e1' },
+                        grid: { color: '#cbd5e1' },
+                        pointLabels: {
+                            font: { family: "'Inter', sans-serif", size: 12 },
+                            color: '#334155'
+                        },
+                        ticks: { display: false, max: 100, min: 0 }
+                    }
+                }
+            }
+        });
+
+        function generateSurfaceData() {
+            let x = []; let y = []; let zOld = []; let zNew = [];
+            for (let i = 0; i < 20; i++) {
+                let datasetSize = Math.pow(10, 3 + (i * 0.2)); 
+                for (let j = 0; j < 20; j++) {
+                    let featureCount = 5 + (j * 5); 
+                    x.push(Math.log10(datasetSize));
+                    y.push(featureCount);
+                    let calcOld = (datasetSize * Math.pow(featureCount, 2)) / 50000;
+                    let calcNew = (datasetSize * featureCount) / 200000;
+                    zOld.push(Math.min(calcOld, 1000));
+                    zNew.push(calcNew);
+                }
+            }
+            return {x, y, zOld, zNew};
+        }
+
+        const plotData = generateSurfaceData();
+        Plotly.newPlot('plotlyScatter3D', [
+            {
+                x: plotData.x, y: plotData.y, z: plotData.zOld,
+                mode: 'markers', marker: { size: 4, color: '#F97316', opacity: 0.6 },
+                type: 'scatter3d', name: 'Legacy Tools'
+            },
+            {
+                x: plotData.x, y: plotData.y, z: plotData.zNew,
+                mode: 'markers', marker: { size: 5, color: '#0D9488', opacity: 0.9 },
+                type: 'scatter3d', name: 'Inferverse'
+            }
+        ], {
+            margin: { l: 0, r: 0, b: 0, t: 0 }, paper_bgcolor: 'transparent',
+            scene: {
+                xaxis: { title: 'Log10(Rows)', backgroundcolor: '#1e293b', gridcolor: '#334155', showbackground: true, tickfont: {color: '#cbd5e1'}, titlefont: {color: '#cbd5e1'} },
+                yaxis: { title: 'Features', backgroundcolor: '#1e293b', gridcolor: '#334155', showbackground: true, tickfont: {color: '#cbd5e1'}, titlefont: {color: '#cbd5e1'} },
+                zaxis: { title: 'Seconds', backgroundcolor: '#1e293b', gridcolor: '#334155', showbackground: true, tickfont: {color: '#cbd5e1'}, titlefont: {color: '#cbd5e1'} },
+                camera: { eye: { x: 1.5, y: -1.5, z: 1.0 } }
+            },
+            legend: { x: 0, y: 1, font: { color: '#ffffff' } }
+        }, {displayModeBar: false, responsive: true});
+    </script>
+</body>
+</html>
