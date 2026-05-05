@@ -42,7 +42,13 @@ By combining approachable syntax with scientific rigor, `inferverse` helps teams
 
 ## Quick start
 
+Get hands-on with `inferverse` in minutes using the guided Colab notebook.
+It walks through the complete inference pipeline—from defining hypotheses to visualizing the null distribution.
+Use it if you want a runnable, step-by-step setup before adapting the workflow to your own experiments.
+
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1U6tYzvFLxvL4jS7lQWmbz6SdIwoRnqAE?usp=sharing)
+
+The minimal example below mirrors the core flow used in the notebook:
 
 ```python
 import polars as pl
@@ -64,7 +70,7 @@ null_distribution = pipeline.calculate(null_samples, stat="diff_in_means")
 chart = pipeline.visualize(null_distribution)
 ```
 
-See `examples.py` for a complete A/B testing workflow and saved chart output.
+See `examples.py` for a complete A/B testing workflow and saved chart output, including reusable patterns for real experiment datasets.
 
 
 ## Documentation
