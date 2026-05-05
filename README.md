@@ -107,7 +107,7 @@ Reference map: [Statistical inference decision map (Coggle)](https://coggle.it/d
 
 ## 📄 White paper
 
-Read the white paper here: [AI Challenge 2026 White Paper](https://ciencia-datos.github.io/AI_Challenge_2026/).
+Read the white paper here: [Need of Inferverse in Python](https://ciencia-datos.github.io/AI_Challenge_2026/).
 
 ## 💬 Feedback
 
