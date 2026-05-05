@@ -107,7 +107,18 @@ Reference map: [Statistical inference decision map (Coggle)](https://coggle.it/d
 
 ## 📄 White paper
 
-Read the white paper here: [Need of Inferverse in Python](https://ciencia-datos.github.io/AI_Challenge_2026/).
+
+## 🗺️ Future roadmap
+
+As `inferverse` evolves beyond beta, we are focusing on features that make statistical inference easier, safer, and more reproducible.
+Planned enhancements include broader test coverage, stronger diagnostics, and richer educational workflows for learners and teams.
+
+- **New inference features**: expanded support for additional tests, effect sizes, confidence intervals, and non-parametric workflows.
+- **Usability upgrades**: clearer error messages, assumption checks, and helper utilities to choose valid tests faster.
+- **Visualization improvements**: more chart styles for null distributions, tail highlighting presets, and export-ready themes.
+- **Learning activities**: guided notebooks, scenario-based examples, and classroom-friendly exercises for A/B testing and experimental design.
+- **Community & feedback loop**: regular iteration based on user reports, suggestions, and real-world use cases from the beta community.
+
 
 ## 💬 Feedback
 
