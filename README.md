@@ -14,6 +14,13 @@ By combining approachable syntax with scientific rigor, `inferverse` helps teams
 
 
 
+
+## 👤 Creator & Author
+
+**Mallesham Yamulla**
+
+Guidance received from **Professor G. Murali Rao**, Indian Statistical Institute Hyderabad.
+
 ## 📘 Introduction to statistical inference
 
 [![Google Drive](https://img.shields.io/badge/Google%20Drive-Watch%20intro%20video-34A853?logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1TWgLDTzn53AvYPF6ZrWSR6N2ZIFyI4x5/view?usp=sharing)
