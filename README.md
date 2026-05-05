@@ -19,13 +19,6 @@ By combining approachable syntax with scientific rigor, `inferverse` helps teams
 [![Google Drive](https://img.shields.io/badge/Google%20Drive-Watch%20intro%20video-34A853?logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1TWgLDTzn53AvYPF6ZrWSR6N2ZIFyI4x5/view?usp=sharing)
 
 
-
-## Introduction to statistical inference
-
-[![Google Drive](https://img.shields.io/badge/Google%20Drive-Watch%20intro%20video-34A853?logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1TWgLDTzn53AvYPF6ZrWSR6N2ZIFyI4x5/view?usp=sharing)
-
-
-
 ## Core verbs
 
 - `specify()` — choose response and (optionally) explanatory variables.
