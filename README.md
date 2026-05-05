@@ -14,18 +14,18 @@ By combining approachable syntax with scientific rigor, `inferverse` helps teams
 
 
 
-## Introduction to statistical inference
+## 📘 Introduction to statistical inference
 
 [![Google Drive](https://img.shields.io/badge/Google%20Drive-Watch%20intro%20video-34A853?logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1TWgLDTzn53AvYPF6ZrWSR6N2ZIFyI4x5/view?usp=sharing)
 
 
 
-## Why statistical inference matters before modeling
+## 🎧 Why statistical inference matters before modeling
 
 [![Google Drive](https://img.shields.io/badge/Google%20Drive-Listen%20to%20audio%20brief-4285F4?logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1I5SNIrq7WPAM9k6uLPipu9UDWjcq75NB/view?usp=sharing)
 
 
-## Core verbs
+## 🧩 Core verbs
 
 - `specify()` — choose response and (optionally) explanatory variables.
 - `hypothesize()` — declare a null hypothesis (`independence` or `point`).
@@ -33,14 +33,18 @@ By combining approachable syntax with scientific rigor, `inferverse` helps teams
 - `calculate()` — compute a statistic for each simulation replicate.
 - `visualize()` — create an infer-style Altair histogram and optionally highlight p-value tails.
 
-## Stack
+## 🛠️ Stack
 
 - `polars` for fast DataFrame operations with tidy-like syntax.
 - `uv` for dependency management and packaging.
 - `scipy` and `statsmodels` for the stats ecosystem.
 - `altair` for visualization.
 
-## Quick start
+## 🚀 Quick start
+
+Get hands-on with `inferverse` in minutes using the guided Colab notebook.
+It walks through the complete inference pipeline—from defining hypotheses to visualizing the null distribution.
+Use it if you want a runnable, step-by-step setup before adapting the workflow to your own experiments.
 
 Get hands-on with `inferverse` in minutes using the guided Colab notebook.
 It walks through the complete inference pipeline—from defining hypotheses to visualizing the null distribution.
@@ -73,20 +77,20 @@ chart = pipeline.visualize(null_distribution)
 See `examples.py` for a complete A/B testing workflow and saved chart output, including reusable patterns for real experiment datasets.
 
 
-## Documentation
+## 📚 Documentation
 
 - Module documentation: [`docs/modules.md`](docs/modules.md)
 - API reference: [`docs/api.md`](docs/api.md)
 
 
 
-## Educational Resources
+## 🎓 Educational Resources
 
 - [Introduction to Modern Statistics (OpenIntro)](https://openintrostat.github.io/ims/)
 - [ModernDive (2nd edition)](https://moderndive.com/v2/)
 
 
-## Cheat Sheet
+## 🗂️ Cheat Sheet
 
 Use this quick guide to choose common statistical inference tests and understand when to apply each one.
 Reference map: [Statistical inference decision map (Coggle)](https://coggle.it/diagram/Vxlydu1akQFeqo6-/t/inference).
@@ -105,10 +109,10 @@ Reference map: [Statistical inference decision map (Coggle)](https://coggle.it/d
 > Tip: If assumptions are doubtful, consider robust or non-parametric alternatives (e.g., Mann-Whitney, Wilcoxon, Kruskal-Wallis, Fisher's exact).
 
 
-## White paper
+## 📄 White paper
 
-Read the white paper here: [AI Challenge 2026 White Paper](https://ciencia-datos.github.io/AI_Challenge_2026/).
+Read the white paper here: [Need of Inferverse in Python](https://ciencia-datos.github.io/AI_Challenge_2026/).
 
-## Feedback
+## 💬 Feedback
 
 [![Google Form](https://img.shields.io/badge/Google%20Form-Share%20feedback-7248B9?logo=googleforms&logoColor=white)](https://forms.gle/3KfUhaC2KSSqENAC9)
