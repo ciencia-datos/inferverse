@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">Inferverse logo</title>
+  <desc id="desc">inferverse wordmark with tagline</desc>
+  <rect width="1200" height="420" fill="white"/>
+  <text x="600" y="210" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="150" font-weight="700" fill="#12255f">infer<tspan fill="#6a4de2">verse</tspan></text>
+  <text x="600" y="300" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="46" letter-spacing="5" fill="#404758">STATISTICAL INFERENCE, MADE SIMPLE</text>
+</svg>
