@@ -107,6 +107,8 @@ Reference map: [Statistical inference decision map (Coggle)](https://coggle.it/d
 
 ## 📄 White paper
 
+Read the white paper here: [Need of statistical inference tool in python](https://ciencia-datos.github.io/AI_Challenge_2026/).
+
 
 ## 🗺️ Future roadmap
 
