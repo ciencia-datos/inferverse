@@ -50,6 +50,12 @@ chart = pipeline.visualize(null_distribution)
 See `examples.py` for a complete A/B testing workflow and saved chart output.
 
 
+## Documentation
+
+- Module documentation: [`docs/modules.md`](docs/modules.md)
+- API reference: [`docs/api.md`](docs/api.md)
+
+
 
 ## White paper
 
