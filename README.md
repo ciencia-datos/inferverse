@@ -57,6 +57,12 @@ See `examples.py` for a complete A/B testing workflow and saved chart output.
 
 
 
+## Educational Resources
+
+- [Introduction to Modern Statistics (OpenIntro)](https://openintrostat.github.io/ims/)
+- [Introduction to Modern Statistics (OpenIntro)](https://openintrostat.github.io/ims/)
+
+
 ## White paper
 
 Read the white paper here: [AI Challenge 2026 White Paper](https://ciencia-datos.github.io/AI_Challenge_2026/).
