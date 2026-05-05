@@ -60,7 +60,7 @@ See `examples.py` for a complete A/B testing workflow and saved chart output.
 ## Educational Resources
 
 - [Introduction to Modern Statistics (OpenIntro)](https://openintrostat.github.io/ims/)
-- [Introduction to Modern Statistics (OpenIntro)](https://openintrostat.github.io/ims/)
+- [ModernDive (2nd edition)](https://moderndive.com/v2/)
 
 
 ## White paper
