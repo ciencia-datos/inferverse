@@ -19,6 +19,12 @@ By combining approachable syntax with scientific rigor, `inferverse` helps teams
 [![Google Drive](https://img.shields.io/badge/Google%20Drive-Watch%20intro%20video-34A853?logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1TWgLDTzn53AvYPF6ZrWSR6N2ZIFyI4x5/view?usp=sharing)
 
 
+
+## Why statistical inference matters before modeling
+
+[![Google Drive](https://img.shields.io/badge/Google%20Drive-Listen%20to%20audio%20brief-4285F4?logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1I5SNIrq7WPAM9k6uLPipu9UDWjcq75NB/view?usp=sharing)
+
+
 ## Core verbs
 
 - `specify()` — choose response and (optionally) explanatory variables.
