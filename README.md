@@ -46,10 +46,6 @@ Get hands-on with `inferverse` in minutes using the guided Colab notebook.
 It walks through the complete inference pipeline—from defining hypotheses to visualizing the null distribution.
 Use it if you want a runnable, step-by-step setup before adapting the workflow to your own experiments.
 
-Get hands-on with `inferverse` in minutes using the guided Colab notebook.
-It walks through the complete inference pipeline—from defining hypotheses to visualizing the null distribution.
-Use it if you want a runnable, step-by-step setup before adapting the workflow to your own experiments.
-
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1U6tYzvFLxvL4jS7lQWmbz6SdIwoRnqAE?usp=sharing)
 
 The minimal example below mirrors the core flow used in the notebook:
@@ -115,4 +111,12 @@ Read the white paper here: [Need of Inferverse in Python](https://ciencia-datos.
 
 ## 💬 Feedback
 
+Your feedback helps shape the roadmap and usability of `inferverse` during beta.
+If you find bugs, confusing docs, or ideas for new inference verbs/tests, please share them.
+We especially welcome notes from first-time users following the notebook and quick-start flow.
+
 [![Google Form](https://img.shields.io/badge/Google%20Form-Share%20feedback-7248B9?logo=googleforms&logoColor=white)](https://forms.gle/3KfUhaC2KSSqENAC9)
+
+## 🏷️ Versioning
+
+Current release: **beta 0.0.1**
