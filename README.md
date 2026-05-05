@@ -86,6 +86,25 @@ See `examples.py` for a complete A/B testing workflow and saved chart output, in
 - [ModernDive (2nd edition)](https://moderndive.com/v2/)
 
 
+## Cheat Sheet
+
+Use this quick guide to choose common statistical inference tests and understand when to apply each one.
+Reference map: [Statistical inference decision map (Coggle)](https://coggle.it/diagram/Vxlydu1akQFeqo6-/t/inference).
+
+| Goal | Typical test | Use when | Key assumptions |
+|---|---|---|---|
+| Compare one sample mean to a benchmark | One-sample t-test | You have one numeric sample and a hypothesized population mean | Independent observations; approximately normal data (or moderate/large n) |
+| Compare two independent group means | Two-sample t-test (Welch) | Numeric outcome for two unrelated groups | Independence; roughly normal within groups; Welch version handles unequal variances |
+| Compare paired measurements | Paired t-test | Before/after or matched-pair numeric observations | Pairing is correct; pairwise differences are approximately normal |
+| Compare two proportions | Two-proportion z-test | Binary outcome across two independent groups | Independent samples; large enough counts in each group |
+| Test association between two categorical variables | Chi-square test of independence | Counts in contingency tables | Independent observations; expected counts sufficiently large |
+| Compare means across 3+ groups | One-way ANOVA | Numeric outcome and one categorical factor with 3+ levels | Independence; residuals approximately normal; similar variance across groups |
+| Measure linear relationship between two numeric variables | Correlation test (Pearson) | Need strength/direction of linear association | Approximate linearity; no severe outliers; near-normal variables (for inference) |
+| Model and test relationship with predictors | Linear regression / logistic regression | Predict numeric (linear) or binary (logistic) outcomes and test coefficients | Independent observations; model form is appropriate; diagnostics acceptable |
+
+> Tip: If assumptions are doubtful, consider robust or non-parametric alternatives (e.g., Mann-Whitney, Wilcoxon, Kruskal-Wallis, Fisher's exact).
+
+
 ## White paper
 
 Read the white paper here: [AI Challenge 2026 White Paper](https://ciencia-datos.github.io/AI_Challenge_2026/).
