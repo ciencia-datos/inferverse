@@ -6,6 +6,18 @@
 
 `inferverse` is a Python-first statistical inference workflow inspired by `tidyverse::infer`.
 
+`inferverse` is currently in beta and built for learners and practitioners who need practical statistical reasoning.
+Modern data work needs more than summaries: it needs principled inference to separate signal from noise.
+The package makes core statistics workflows reproducible, from hypothesis setup to null-distribution simulation.
+It brings inference-friendly verbs into Python so analysts can run rigorous tests without leaving their data pipeline.
+By combining approachable syntax with scientific rigor, `inferverse` helps teams make evidence-based decisions with confidence.
+
+
+
+## Introduction to statistical inference
+
+[![Google Drive](https://img.shields.io/badge/Google%20Drive-Watch%20intro%20video-34A853?logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1TWgLDTzn53AvYPF6ZrWSR6N2ZIFyI4x5/view?usp=sharing)
+
 
 
 ## Introduction to statistical inference
