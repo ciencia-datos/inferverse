@@ -1,6 +1,14 @@
 # inferverse
 
+<p align="center">
+  <img src="assets/inferverse-logo.svg" alt="Inferverse logo" width="520" />
+</p>
+
 `inferverse` is a Python-first statistical inference workflow inspired by `tidyverse::infer`.
+
+## Feedback
+
+[![Google Form](https://img.shields.io/badge/Google%20Form-Share%20feedback-7248B9?logo=googleforms&logoColor=white)](https://forms.gle/3KfUhaC2KSSqENAC9)
 
 ## Core verbs
 
