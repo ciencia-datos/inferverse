@@ -48,3 +48,7 @@ chart = pipeline.visualize(null_distribution)
 ```
 
 See `examples.py` for a complete A/B testing workflow and saved chart output.
+
+## Feedback
+
+[![Google Form](https://img.shields.io/badge/Google%20Form-Share%20feedback-7248B9?logo=googleforms&logoColor=white)](https://forms.gle/3KfUhaC2KSSqENAC9)
