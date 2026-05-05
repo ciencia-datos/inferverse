@@ -8,6 +8,12 @@
 
 
 
+## Introduction to statistical inference
+
+[![Google Drive](https://img.shields.io/badge/Google%20Drive-Watch%20intro%20video-34A853?logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1TWgLDTzn53AvYPF6ZrWSR6N2ZIFyI4x5/view?usp=sharing)
+
+
+
 ## Core verbs
 
 - `specify()` — choose response and (optionally) explanatory variables.
@@ -55,6 +61,12 @@ See `examples.py` for a complete A/B testing workflow and saved chart output.
 - Module documentation: [`docs/modules.md`](docs/modules.md)
 - API reference: [`docs/api.md`](docs/api.md)
 
+
+
+## Educational Resources
+
+- [Introduction to Modern Statistics (OpenIntro)](https://openintrostat.github.io/ims/)
+- [ModernDive (2nd edition)](https://moderndive.com/v2/)
 
 
 ## White paper
