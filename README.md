@@ -25,6 +25,8 @@
 
 ## Quick start
 
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1U6tYzvFLxvL4jS7lQWmbz6SdIwoRnqAE?usp=sharing)
+
 ```python
 import polars as pl
 from inferverse import InferPipeline
